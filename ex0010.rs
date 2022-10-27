@@ -40,6 +40,7 @@ fn brute_force_prime_sum(n: u64) -> u64 {
     return current_sum;
 }
 
+// We could limit memory by doing a segmented sieve but I am lazy here.
 fn sum_sieve_of_eratosthenes(n: usize) -> usize {
     if n < 2 {
         return 0;
